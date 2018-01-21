@@ -15,10 +15,18 @@ public class Human {
     int age;
     int heightInInches;
     String eyeColor;
-    
-    public Human () {
-        
+
+    public Human(String name, int age, int heightInInches, String eyeColor) {
+        this.name = name;
+        this.age = age;
+        this.heightInInches = heightInInches;
+        this.eyeColor = eyeColor;
     }
+
+    Human() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+        
     
     public void speak() {
         System.out.println("Hello, my name is " + name);
